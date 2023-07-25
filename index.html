@@ -58,7 +58,6 @@
           example, a web browser), JavaScript can be connected to the objects of
           its environment to provide programmatic control over them.
         </p>
-        <br />
         <p>
           JavaScript contains a standard library of objects, such as Array,
           Date, and Math, and a core set of language elements such as operators,
@@ -136,11 +135,11 @@
         <p>
           To get started with writing JavaScript, open the Scratchpad and write
           your first "Hello world" JavaScript code:
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");</code
+          >
         </p>
-        <code
-          >function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");</code
-        >
         <p>
           Select the code in the pad and hit Ctrl+R to watch it unfold in your
           browser!
@@ -206,16 +205,18 @@
           following code will log 5, because the scope of x is the function (or
           global context) within which x is declared, not the block, which in
           this case is an if statement.
+
+          <code>if (true) { var x = 5; } console.log(x); // 5</code>
         </p>
-        <code>if (true) { var x = 5; } console.log(x); // 5</code>
         <p>
           This behavior changes, when using the let declaration introduced in
           ECMAScript 2015.
+
+          <code
+            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+            not defined</code
+          >
         </p>
-        <code
-          >if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-          defined</code
-        >
       </section>
 
       <section class="main-section" id="Global_variables">
@@ -241,8 +242,9 @@
           syntax of a constant identifier is the same as for a variable
           identifier: it must start with a letter, underscore or dollar sign and
           can contain alphabetic, numeric, or underscore characters.
+
+          <code>const PI = 3.14;</code>
         </p>
-        <code>const PI = 3.14;</code>
         <p>
           A constant cannot change value through assignment or be re-declared
           while the script is running. It has to be initialized to a value.
@@ -262,11 +264,12 @@
           >
           However, object attributes are not protected, so the following
           statement is executed without problems.
+
+          <code
+            >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+            "otherValue";</code
+          >
         </p>
-        <code
-          >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-          "otherValue";</code
-        >
       </section>
 
       <section class="main-section" id="Data_types">
@@ -374,8 +377,9 @@
 
         <p>
           The following while loop iterates as long as n is less than three:
+
+          <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
         </p>
-        <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
 
         <p>
           With each iteration, the loop increments n and adds that value to x.
@@ -437,7 +441,15 @@
       <section class="main-section" id="Reference">
         <header>Reference</header>
         <ul>
-          <li>All the documentation in this page is taken from MDN</li>
+          <li>
+            All the documentation in this page is taken from
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+              target="_blank"
+              rel="noreferrer"
+              >MDN</a
+            >
+          </li>
         </ul>
       </section>
     </main>
