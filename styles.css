@@ -20,6 +20,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  min-width: 200px;
   width: 230px;
   height: 100%;
   min-width: 270px;
@@ -38,8 +39,7 @@ nav {
   height: 88%;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: scroll;
-  margin: 0;
+  overflow-y: auto;
 }
 
 #nav li {
@@ -85,6 +85,11 @@ code {
     border: 1px solid black;
     height: 300px;
     overflow-y: hidden;
+    padding: 20px 0 0 0;
+  }
+
+  #navbar ul {
+    margin: 0 0 0 0;
   }
 
   main {
