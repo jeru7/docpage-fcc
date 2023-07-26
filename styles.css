@@ -45,7 +45,12 @@ nav {
 #nav li {
   border-top: 1px solid black;
   padding: 10px;
-  font-size: 15px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#nav li.last {
+  border-bottom: 1px solid black;
   width: 100%;
 }
 
@@ -82,18 +87,23 @@ code {
   #navbar {
     position: relative;
     width: 100%;
-    border: 1px solid black;
-    height: 300px;
-    overflow-y: hidden;
-    padding: 20px 0 0 0;
+    height: 400px;
   }
 
   #navbar ul {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 
   main {
     position: inherit;
     padding: 20px 10px;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #nav li:last-child {
+    border-bottom: 1px solid black;
   }
 }
