@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Documentation Page - freeCodeCamp Assignment
 
 ## Description
@@ -20,3 +21,7 @@ Once I learn more about CSS and HTML I will improve this site again, specially i
 
 - HTML
 - CSS
+=======
+# DocPage - This is an assignment on freeCodeCamp
+## [Visit site](https://jeru7.github.io/docpage/)
+>>>>>>> 2394b910474a1c0fe8d13fad2c0c394e74738432
