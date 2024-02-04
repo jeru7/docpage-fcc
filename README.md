@@ -6,7 +6,7 @@ This is my submission for the freeCodeCamp's documentation page assignment.
 
 ## Live site
 
-This is the live version of the documentation page: [Visit site](https://jeru7.github.io/docpage/)
+This is the live version of the documentation page: [Visit site](https://jeru7.github.io/docpage-fcc/)
 
 ## Preview
 
